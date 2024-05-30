@@ -198,110 +198,21 @@ Our results show that even state-of-the-art models still lag behind human perfor
                     <b>Framework of Data Construction.</b> For each comic, we annotate the corresponding literal description, contradiction explanation, underlying philosophy and comic title. We primarily rely on human annotators to obtain gold-standard annotations. Our annotation process included two stages: the progressive human-AI collaborative annotation stage and the quality check and cross-verification stage. See in our figure.
 		</p>
             </div>
-			
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br><br>
-                <h2>
-                    Virtual talking faces driven by real videos
-                </h2>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                    
-                </p>
-                <video style="width:100%;height:100%;" playsinline="" autoplay="" loop="" preload="" controls="" muted="">
-                    <source src="./files/talkingface_1.mov" type="video/mp4">
-                </video>
-                
-                <!--<hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                </p>
-                <video style="width:100%;height:100%;" playsinline controls muted>
-                    <source src="./files/talkingface_2.mp4" type="video/mp4">
-                </video>-->
-				
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br><br>
-                <h2>
-                    Comparison with Inversion Methods
-
-                </h2>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                    
-                </p>
-                <video style="width:100%;height:100%;" playsinline="" autoplay="" loop="" preload="" controls="" muted="">
-                    <source src="./files/compare_inversion.mov" type="video/mp4">
-                </video>
-            </div>
-        </div>
-		
-		<div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br><br>
-                <h2>
-                    Comparison with Single-shot NeRF Methods
-                </h2>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                    
-                </p>
-                <video style="width:100%;height:100%;" playsinline="" autoplay="" loop="" preload="" controls="" muted="">
-                    <source src="./files/compare_singleshot_nerf.mov" type="video/mp4">
-                </video>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br><br>
-                <h2>
-                    NeRFInvertor on GRAM (256*256)
-                </h2>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                    
-                </p>
-                <video style="width:100%;height:100%;" playsinline="" autoplay="" loop="" preload="" controls="" muted="">
-                    <source src="./files/gram.mov" type="video/mp4">
-                </video>
-            </div>
-        </div>
-		
-        <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br><br>
-                <h2>
-                    NeRFInvertor on EG3D (512*512)
-                </h2>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                    
-                </p>
-                <video style="width:100%;height:100%;" playsinline="" autoplay="" loop="" preload="" controls="" muted="">
-                    <source src="./files/eg3d.mov" type="video/mp4">
-                </video>
-            </div>
-        </div>
 
 		<div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
                 <br><br>
                 <h2>
-                    Ethics and responsible AI considerations 
+                    Ethics Statement
                 </h2>
                 <hr style="margin-top:0px">
                 <p class="text-justify" style="font-size: 16px;">
-                    This work achieves 3D-consistent and ID-preserving animation (i.e. novel views and expressions) of real subjects given only a single image. It is not intended to create content that is used to mislead or deceive. However, like other related face image generation techniques, it could still potentially be misused for impersonating humans. We condemn any behavior to create misleading or harmful contents of real person, and are interested in applying this technology for advancing 3D- and video-based forgery detection. Currently, the images generated by this method contain visual artifacts that can be easily identified. The method is data driven, and the performance is affected by the biases in the training data. One should be careful about the data collection process and ensure unbiased distrubitions of race, gender, age, among others.
-                </p>
-            </div>
+                    Copyright and License. All data samples collected are sourced from publicly available content on social media platforms. We ensure compliance with copyright by utilizing original links to comics without infringement. Additionally, we commit to open-sourcing our annotated benchmark, providing corresponding links to each comic image. We diligently review samples, filtering out potentially offensive or harmful content.
+		</p>
+            </div>			
         </div>
+
+       
 	
 
         <div class="row">
@@ -336,12 +247,10 @@ Our results show that even state-of-the-art models still lag behind human perfor
                                                 <div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 17.1406px;">&nbsp;</div>
                                             </div>
                                             <div class="CodeMirror-code" style="">
-                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">@inproceedings{yin2023nerfinvertor,</span></pre>
-                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title={NeRFInvertor: High Fidelity NeRF-GAN Inversion for Single-shot Real Image Animation},</span></pre>
-                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author={Yin, Yu and Ghasedi, Kamran and Wu, HsiangTao and Yang, Jiaolong and Tong, Xin and Fu, Yun},</span></pre>
-                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},</span></pre>
-                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  pages={8539--8548},</span></pre>
-                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2023}</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">@inproceedings{XXXX,</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title={Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions},</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author={Zhe Hu, Tuo Liang, Jing Li, Yiren Lu, Yunlai Zhou, Yiran Qiao, Jing Ma, Yu Yin},</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2024}</span></pre>
                                                 <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">}</span></pre>
                                             </div>
                                         </div>
