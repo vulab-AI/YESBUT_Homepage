@@ -130,15 +130,15 @@
             <!-- carousel images -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="./files/intro_example.png" alt="Image 1" style="width:100%;" >
+                    <img src="./files/intro_example.png" alt="Image 1" style="width:50%;height:50%;" >
                 </div>
 
                 <div class="item">
-                    <img src="./files/sample.png" alt="Image 2" style="width:100%;" >
+                    <img src="./files/sample.png" alt="Image 2" style="width:50%;height:50%;" >
                 </div>
 
                 <div class="item">
-                    <img src="./files/annotation_pipeline.png" alt="Image 3" style="width:100%;">
+                    <img src="./files/sample2.png" alt="Image 3" style="width:50%;height:50%;">
                 </div>
             </div>
 
@@ -204,6 +204,18 @@ Our results show that even state-of-the-art models still lag behind human perfor
                 <img src="./files/annotation_pipeline.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify" style="font-size: 16px;">
                     <b>Framework of Data Construction.</b> For each comic, we annotate the corresponding literal description, contradiction explanation, underlying philosophy and comic title. We primarily rely on human annotators to obtain gold-standard annotations. Our annotation process included two stages: the progressive human-AI collaborative annotation stage and the quality check and cross-verification stage. See in our figure.
+		</p>
+            </div>
+			
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+                <h2>
+                    Results Overview
+                </h2>
+                <hr style="margin-top:0px">
+                <img src="./files/results.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify" style="font-size: 16px;">
+                    <b>Results description.</b> For literal description and contradiction, we report BERT score (recall), BLEURT (BLT), and GPT evaluation score. Best scores are bold and the second best ones are marked with underline.
 		</p>
             </div>
 
