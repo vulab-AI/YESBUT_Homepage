@@ -1,146 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0040)https://yuyin1.github.io/YESBUT_Homepage/ -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cracking the Code of Juxtaposition: Can AI Models Understand Humorous Contradictions</title>
+
+    <title>Can AI Models Understand the Humorous Contradictions</title>
+
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
 
-        h1, h2, h3 {
-            color: #0056b3;
-        }
+    <link rel="stylesheet" href="./YESBUT_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./YESBUT_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./YESBUT_files/codemirror.min.css">
+    <link rel="stylesheet" href="./YESBUT_files/app.css">
 
-        .navbar, footer {
-            background-color: #007bff;
-            color: #ffffff;
-        }
 
-        a, a:hover {
-            color: #007bff;
-        }
 
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-top: 20px;
-        }
 
-        .top-buffer { margin-top:20px; }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
 
-<div class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">YESBUT Research</a>
+<body data-new-gr-c-s-check-loaded="14.1087.0" data-gr-ext-installed="">
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-20 text-center">
+                <br><br>
+                <b>Cracking the Code of Juxtaposition</b>: Can AI Models Understand the Humorous Contradictions <br>
+                <!-- <small>
+                    Submitted (Spotlight)
+                </small> -->
+            </h1>
+            <hr style="margin-top:0px">
         </div>
-        <ul class="nav navbar-nav">
-            <li><a href="#abstract">Abstract</a></li>
-            <li><a href="#dataset">Dataset Overview</a></li>
-            <li><a href="#tasks">Task Design</a></li>
-            <li><a href="#citation">Citation</a></li>
-        </ul>
-    </div>
-</div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://derekhu.com/" style="font-size: 16px;">
+                            <b> Zhe Hu </b>
+                        </a>
+                        <sup>1</sup>
+                    </li>
+                    <li>
+                        <a href="https://Tuo-Liang.github.io" style="font-size: 16px;">
+                            <b> Tuo Liang </b>
+                        </a>
+                        <sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="https://yin-yu.github.io/" style="font-size: 16px;">
+                            Jing Li
+                        </a>
+                        <sup>1</sup>
+                    </li>
+		    <li>
+                        <a href="https://yiren-lu.com/" style="font-size: 16px;">
+                            Yiren Lu
+                        </a>
+                        <sup>2</sup>
+                    </li>
+		    <li>
+                        <a href="https://www.linkedin.com/in/%E4%BA%91%E6%9D%A5-%E5%91%A8-932a022aa/?locale=en_US" style="font-size: 16px;">
+                            Yunlai Zhou
+                        </a>
+                        <sup>2</sup>
+                    </li>
+		    <li>
+                        <a href="https://www.linkedin.com/in/yiran-qiao-10298b238/" style="font-size: 16px;">
+                            Yiran Qiao
+                        </a>
+                        <sup>2</sup>
+                    </li>
+		    <li>
+                        <a href="https://jma712.github.io/" style="font-size: 16px;">
+                            Jing Ma
+                        </a>
+                        <sup>2</sup>
+                    </li>
+		    <li>
+                        <a href="https://yin-yu.github.io/" style="font-size: 16px;">
+                            Yu Yin
+                        </a>
+                        <sup>2</sup>
+                    </li>
+                    <br>
+                    <a></a><br>
+			        <li>
+                        <sup>1</sup>
+                        <a style="font-size: 16px;">
+                            The Hong Kong Polytechnic University
+                        </a>
+                        </li>
+			        <li>
+                        <sup>2</sup>
+                        <a style="font-size: 16px;">
+                            Case Western Reserve University 
+                        </a>
+			</li>
 
-<div class="container">
-    <h1 class="text-center">Cracking the Code of Juxtaposition: Can AI Models Understand Humorous Contradictions</h1>
-    <hr>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <!-- List of authors -->
-            <p>
-                <strong>Authors:</strong> Zhe Hu, Tuo Liang, Jing Li, Yiren Lu, Yunlai Zhou, Yiran Qiao, Jing Ma, Yu Yin
-                <br>
-                <strong>Institutions:</strong> The Hong Kong Polytechnic University, Case Western Reserve University
-            </p>
-            <p>This paper has been accepted at NeurIPS 2024 as an oral presentation.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="./files/1.png" alt="Image 1" style="width:100%;height:auto;">
-                    </div>
-                    <div class="item">
-                        <img src="./files/2.png" alt="Image 2" style="width:100%;height:auto;">
-                    </div>
-                    <div class="item">
-                        <img src="./files/3.png" alt="Image 3" style="width:100%;height:auto;">
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <li>
+              
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+		
+		<br>
+		<div class="row">
+		<div class="col-md-12 text-center">
+<!-- 			<a href="https://arxiv.org/html/2405.19088v1" target="blank"><span style="text-decoration:underline;font-size:20px">arXiv:2206.07255</span></a> -->
+		</div>
+		</div>
 
-    <div class="row top-buffer" id="abstract">
-        <h2>Abstract</h2>
-        <p class="text-justify">
-            Recent advancements in large multimodal language models have demonstrated remarkable proficiency across a wide range of applications. However, these models still struggle with understanding the nuances of human humor through juxtaposition, particularly when it involves nonlinear narratives that underpin many jokes and humor cues. This paper investigates this challenge by focusing on comics with contradictory narratives, where each comic consists of two panels that create a humorous contradiction. We introduce the YESBUT benchmark, which comprises scenarios of varying difficulty aimed at assessing AI’s capabilities in recognizing and interpreting these comics, ranging from literal content comprehension to deep narrative reasoning.
-        </p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p>This paper has been accepted at NeurIPS 2024 as an oral presentation.</p>
     </div>
-
-    <div class="row top-buffer" id="dataset">
-        <h2>YESBUT Dataset Overview</h2>
-        <p class="text-justify">
-            The YESBUT benchmark consists of comics featuring contradictory narratives. Each sample includes a two-panel comic that forms a narrative with inherent contradictions, a literal description of the comic narratives, an explanation that illustrates the contradiction within the narrative, the deep philosophy or underlying message the comic aims to convey, and a title of the comic. We construct various tasks for comic understanding based on these components.
-        </p>
-    </div>
-
-    <div class="row top-buffer" id="tasks">
-        <h2>Task Design</h2>
-        <p class="text-justify">
-            <!-- Insert Task Design Content -->
-        </p>
-    </div>
-
-    <div class="row top-buffer">
-        <h2>Citation</h2>
-        <pre>
-@@article{2024cracking,
-  title={Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions},
-  author={Zhe Hu, Tuo Liang, Jing Li, Yiren Lu, Yunlai Zhou, Yiran Qiao, Jing Ma, Yu Yin},
-  journal={arXiv preprint arXiv:2405.19088},
-  year={2024}
-}
-        </pre>
-    </div>
+  </div>
 </div>
 
-<footer class="navbar navbar-default">
-    <div class="container">
-        <p>© 2024 YESBUT Research. All rights reserved.</p>
-    </div>
-</footer>
 
-</body>
-</html>
+<div class="row">
+	
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <!--<li>
+                        <a href="XXXX">
+                            <img src="./YESBUT_files/paper_icon.png" height="60px">
+                            <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>-->
+
+                    <li>
+                        <a href="https://arxiv.org/html/2405.19088v1">
+                            <img src="./YESBUT_files/arxiv.png" height="60px">
+                            <h4><strong>ArXiv</strong></h4>
+                        </a>
+                    </li>
+
+                    <!--<li>
+                        <a href="https://github.com/Tuo-Liang/YESBUT/tree/main">
+                            <img src="./YESBUT_files/github_icon.jpeg" height="60px">
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>-->
+
+                    <li>
+                        <a onclick="alert(&#39;Code will be released soon.&#39;)">
+                            <img src="./YESBUT_files/github_icon.jpeg" height="60px">
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	
+
+	    <div class="container" style="width:100%; ">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- carousel images -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./files/1.png" alt="Image 1" style="display: block; margin: 0 auto; width: 100%; height: auto;" >
+                </div>
+
+                <div class="item">
+                    <img src="./files/2.png" alt="Image 2" style="display: block; margin: 0 auto; width: 100%; height: auto;" >
+                </div>
+
+                <div class="item">
+                    <img src="./files/3.png" alt="Image 3" style="display: block; margin: 0 auto; width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <!-- button -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 引入jQuery和Bootstrap的JavaScript文件 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+
+		
+	<div class="row">
+	    <div class="col-md-12 col-md-offset-0 text-center">
+	        <!--<a>
+	            <img src="./files/teaser.jpg" alt="Teaser Image" style="width:100%;height:auto;">
+	        </a>
+		    -->
+	        <br><br>
+	
+                <h2>
+                    Abstract
+                </h2>
+                <hr style="margin-top:0px">
+                <p class="text-justify" style="font-size: 16px;">
+                    Recent advancements in large multimodal language models have demonstrated remarkable proficiency across a wide range of s. Yet, these models still struggle with understanding the nuances of human humor through juxtaposition, particularly when it involves nonlinear narratives that underpin many jokes and humor cues. This paper investigates this challenge by focusing on comics with contradictory narratives, where each comic consists of two panels that create a humorous contradiction. We introduce the YESBUT benchmark, which comprises s of varying difficulty aimed at assessing AI’s capabilities in recognizing and interpreting these comics, ranging from literal content comprehension to deep narrative reasoning. Through extensive experimentation and analysis of recent commercial or open-sourced large (vision) language models, we assess their capability to comprehend the complex interplay of the narrative humor inherent in these comics.
+Our results show that even state-of-the-art models still lag behind human performance on this . Our findings offer insights into the current limitations and potential improvements for AI in understanding human creative expressions.
+                </p>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+                <h2>
+                    YESBUT Dataset Overview
+                </h2>
+		<!--
+                <hr style="margin-top:0px">
+                <img src="./files/intro_example.png" class="img-responsive" alt="overview"><br>
+		    -->
+                <p class="text-justify" style="font-size: 16px;">
+                    <b>Explanation of Dataset.</b>Our benchmark consists of YESBUT comics featuring contradictory narratives. Specifically, each sample includes: (1) a two-panel comic that forms a narrative with inherent contradictions; (2) a literal description of the comic narratives; (3) an explanation that illustrates the contradiction within the narrative; (4) the deep philosophy or underlying message the comic aims to convey; and (5) a title of the comic. Based on these components, we construct various tasks for comic understanding. 
+		</p>
+            </div>
+		
+		<div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+                <h2>
+                    Data Construction Overview
+                </h2>
+                <hr style="margin-top:0px">
+                <img src="./files/annotation_pipeline.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify" style="font-size: 16px;">
+                    <b>Framework of Data Construction.</b> For each comic, we annotate the corresponding literal description, contradiction explanation, underlying philosophy and comic title. We primarily rely on human annotators to obtain gold-standard annotations. Our annotation process included two stages: the progressive human-AI collaborative annotation stage and the quality check and cross-verification stage. See in our figure.
+		</p>
+            </div>
+
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+                <h2>
+                    Task Design 
+                </h2>
+		<hr style="margin-top:0px">
+		        <p class="text-justify" style="font-size: 16px;">
+		        	<b> 1. Literal Description Writing. </b>
+				<br>
+				We observe that the two commercial models generally outperform the smaller open-sourced models. Among these models, GPT-4 achieves the highest scores. For the open-sourced models, the larger model variants (13B) consistently achieve better scores than their 7B counterparts, indicating that larger models have a superior ability to understand the image and produce higher-quality literal descriptions.
+				<br>
+				<b> 2. Contradiction Generation</b>
+				<br>
+				GPT-4 and Claude-3 achieve better results than other VLM models. Notably, LLaVA-1.6 variants outperform their counterparts in generating contradiction descriptions. This is likely due to their improved reasoning ability and world knowledge [53], which are essential for understanding comic narratives and accurately capturing the relationship between the two panels. For LLMs, unlike VLMs, the Llama-3 and Mistral models achieve results comparable to ChatGPT. Another interesting observation is that Llama-3 and Mistral obtain similar or better results for contradiction generation compared to open-sourced VLMs, despite not having access to the original comic images.
+				<br>
+				<b> 3. Underlying Philosophy Selection and Title Matching. </b>
+				<br>
+				The Underlying Philosophy Selection and Title Matching tasks require in-depth reasoning based on the comic narratives. For philosophy selection, Claude-3 achieves the best accuracy, while for title matching, the LLaVA-1.6 34B variant ranks the highest accuracy. One key observation is that larger models usually perform better in-depth understanding of the comics, aligning with the findings that larger models typically exhibit superior reasoning abilities.
+Additionally, LLMs achieve performance comparable to open-sourced VL models.
+				<br>
+	
+			</p>
+		    
+                    <b>Do Large Models Understand Humor in Juxtaposition? </b> We aim to evaluate the capabilities of recent large (visual) language models in understanding humor through contradictions. This is challenging because it requires both social reasoning about human events and nonlinear logical reasoning about the narratives, going beyond the literal understanding of the comic. We design a series of tasks that require different levels of narrative understanding and reasoning abilities to evaluate the models’ performance in reading comics.
+		</p>
+            </div>
+			
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+                <h2>
+                    Potential works (example)
+                </h2>
+		<p class="text-justify" style="font-size: 16px;">
+		    In the future, we intend to explore more deeply how AI can creatively engage with content. This includes generating pivotal turning points from one perspective and creating counterpoints to given scenarios, like generating a "But" image by given "Yes". The following is a simple example of it.
+
+		</p>
+
+
+		    
+                <hr style="margin-top:0px">
+                <img src="./files/4.png" style="width: 60%; height: 60%;" ><br>
+
+		</p>
+            </div>
+
+		<div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+                <h2>
+                    Ethics Statement
+                </h2>
+                <hr style="margin-top:0px">
+                <p class="text-justify" style="font-size: 16px;">
+                    Copyright and License. All data samples collected are sourced from publicly available content on social media platforms. We ensure compliance with copyright by utilizing original links to comics without infringement. Additionally, we commit to open-sourcing our annotated benchmark, providing corresponding links to each comic image. We diligently review samples, filtering out potentially offensive or harmful content.
+		</p>
+            </div>			
+        </div>
+
+       
+	
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <div class="text-center">
+                    <h2>
+                        Citation
+                    </h2>
+                </div>
+                <hr style="margin-top:0px">
+                <div class="form-group col-md-12 col-md-offset-0">
+                    <div class="CodeMirror cm-s-default CodeMirror-wrap" style="font-size: 16px;">
+                        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px; ">
+                            <textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div>
+                        <div class="CodeMirror-vscrollbar" cm-not-content="true">
+                            <div style="min-width: 1px; height: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-hscrollbar" cm-not-content="true">
+                            <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-scroll" tabindex="-1">
+                            <div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 162px; padding-right: 0px; padding-bottom: 0px;">
+                                <div style="position: relative; top: 0px;">
+                                    <div class="CodeMirror-lines">
+                                        <div style="position: relative; outline: none;">
+                                            <div class="CodeMirror-measure">AخA</div>
+                                            <div class="CodeMirror-measure"></div>
+                                            <div style="position: relative; z-index: 1;"></div>
+                                            <div class="CodeMirror-cursors">
+                                                <div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 17.1406px;">&nbsp;</div>
+                                            </div>
+                                            <div class="CodeMirror-code" style="">
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">@@article{2024cracking,</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title={Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions},</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author={Zhe Hu, Tuo Liang, Jing Li, Yiren Lu, Yunlai Zhou, Yiran Qiao, Jing Ma, Yu Yin},</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  journal={arXiv preprint arXiv:2405.19088},</span></pre>
+                                                <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2024}</span></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; height: 13px; width: 1px; top: 280px;"></div>
+                            <div class="CodeMirror-gutters" style="display: none; height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+				<!--
+                <h2>
+                    Acknowledgements
+                </h2>
+				-->
+                <hr style="margin-top:0px">
+                <p class="text-justify" style="font-size: 16px;">
+                    The comics on the website are created by Artist <a href="https://x.com/like_gudim">Gudim</a>.
+                </p>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+</div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
