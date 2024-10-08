@@ -120,8 +120,6 @@
 
 
 <div class="row">
-	
-
         <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
                 <ul class="nav nav-pills nav-justified">
@@ -166,8 +164,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		
 
-		
-	<div class="row">
+<br>
+<div class="row">
 	    <div class="col-md-12 col-md-offset-0 text-center">
 	        <!--<a>
 	            <img src="./files/teaser.jpg" alt="Teaser Image" style="width:100%;height:auto;">
@@ -238,11 +236,8 @@ Our results show that even state-of-the-art models still lag behind human perfor
                 <h2>
                     <b>YESBUT Dataset Overview</b>
                 </h2>
-		<!--
                 <hr style="margin-top:0px">
-                <img src="./files/intro_example.png" class="img-responsive" alt="overview"><br>
-		    -->
-                <p class="text-justify" style="font-size: 16px;">
+                <p class="text-justify  text-center" style="font-size: 16px;">
                     <b>Explanation of Dataset.</b>Our benchmark consists of YESBUT comics featuring contradictory narratives. Specifically, each sample includes: 
 			<br>
 			(1) a two-panel comic that forms a narrative with inherent contradictions; 
@@ -276,39 +271,35 @@ Our results show that even state-of-the-art models still lag behind human perfor
             <div class="col-md-12 col-md-offset-0 text-center">
                 <br><br>
                 <h2>
-                    <b>Task Design </b>
+                    <b>Tasks </b>
                 </h2>
 		<hr style="margin-top:0px">
-		        <p class="text-justify" style="font-size: 16px;">
-		        	<b> 1. Literal Description Writing. </b>
-				We observe that the two commercial models generally outperform the smaller open-sourced models. Among these models, GPT-4 achieves the highest scores. For the open-sourced models, the larger model variants (13B) consistently achieve better scores than their 7B counterparts, indicating that larger models have a superior ability to understand the image and produce higher-quality literal descriptions.
-				<br>
-				<br>
-				<br>
-				<b> 2. Contradiction Generation. </b>
-				GPT-4 and Claude-3 achieve better results than other VLM models. Notably, LLaVA-1.6 variants outperform their counterparts in generating contradiction descriptions. This is likely due to their improved reasoning ability and world knowledge, which are essential for understanding comic narratives and accurately capturing the relationship between the two panels. For LLMs, unlike VLMs, the Llama-3 and Mistral models achieve results comparable to ChatGPT. Another interesting observation is that Llama-3 and Mistral obtain similar or better results for contradiction generation compared to open-sourced VLMs, despite not having access to the original comic images.
-				<br>
-				<br>
-				<br>
-				<b> 3. Underlying Philosophy Selection and Title Matching. </b>
-				The Underlying Philosophy Selection and Title Matching tasks require in-depth reasoning based on the comic narratives. For philosophy selection, Claude-3 achieves the best accuracy, while for title matching, the LLaVA-1.6 34B variant ranks the highest accuracy. One key observation is that larger models usually perform better in-depth understanding of the comics, aligning with the findings that larger models typically exhibit superior reasoning abilities.
-Additionally, LLMs achieve performance comparable to open-sourced VL models.
-				<br>
-				<br>
-				<br>
-	
-			</p>
+                	<img src="./files/tasks.jpg" class="img-responsive" alt="overview"><br>
 		    <br>
 		    <br>
                     <b>Do Large Models Understand Humor in Juxtaposition? </b> We aim to evaluate the capabilities of recent large (visual) language models in understanding humor through contradictions. This is challenging because it requires both social reasoning about human events and nonlinear logical reasoning about the narratives, going beyond the literal understanding of the comic. We design a series of tasks that require different levels of narrative understanding and reasoning abilities to evaluate the models’ performance in reading comics.
 		</p>
             </div>
+
+	<div class="col-md-12 col-md-offset-0 text-center">
+                <br><br>
+                <h2>
+                    <b>Main Results</b>
+                </h2>
+		<p class="text-justify" style="font-size: 16px;">
+			
+		</p>
+
+	<\div>
+
+	
 			
             <div class="col-md-12 col-md-offset-0 text-center">
                 <br><br>
                 <h2>
-                    <b>Potential appllications of the dataset</b>
+                    <b>Potential applications of the dataset</b>
                 </h2>
+		    <hr style="margin-top:0px">
 		<p class="text-justify" style="font-size: 16px;">
 		    <b>Generative task </b>In the future, we intend to explore more deeply how AI can creatively engage with content. This includes generating pivotal turning points from one perspective and creating counterpoints to given scenarios, like generating a "But" image by given "Yes". The following is a simple example of it.
 
