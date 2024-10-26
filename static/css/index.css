@@ -155,3 +155,37 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+
+/*Colors*/
+.red-text {
+  color: red;
+}
+.green-text {
+  color: green;
+}
+.purple-text {
+  color: purple;
+}
+.darkblue-text {
+  color: #00008B;
+}
+.purple-text {
+  color: purple;
+}
+
+/*text-decoration*/
+.underline {
+            text-decoration: underline;
+        }
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional: to restrict the width of the container */
+  width: 100%; 
+  height: auto; 
+}
