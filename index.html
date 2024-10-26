@@ -226,90 +226,174 @@
 </section>
 <!-- End Tasks -->
 
-<!-- Results: Error Analysis and Future Directions -->
-<section class="hero is-small">
+<!-- Error Analysis and Future Directions -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
     <div class="hero-body">
-        <div class="container has-text-centered">
-            <h2 class="title">When VLM fails and future directions</h2>
-            <div id="results-carousel" class="carousel results-carousel">
-                <!-- <ul>
-                    <li>
-                        <h2 class="subtitle is-4">Evaluating Large Models' Understanding of Humor in Juxtaposition: Task Designs from Our Paper</h2>
-                        
-                    </li>
-                    <li>In-depth Reasoning of the Relationship</li>
-                    <li>Hallucination and Incorrect Association</li>
-                </ul> -->
-                 <!-- Carousel Inner -->
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Navigating VLM Failures: Lessons and Future Pathways</h2>
+        </div>
 
-
-            </div>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <span class="is-size-5 dnerf purple-text underline"><b>Visual Misinterpretation</b></span>: The model incorrectly interprets the image contents.
+              <div class="item">
+                <img src="static/images/error1.jpg" alt="MY ALT TEXT"/>
+              </div>
+              <p>
+                => <i>This highlights the need for future research to improve models’ visual interpretation capabilities.</i>
+              </p>
+            </li>
+            <li>
+              <p>
+              <span class="is-size-5 dnerf red-text"><b>In-depth Reasoning of the Relationship</b></span>: Models also struggle to conduct in-depth reasoning of the relationship between two panels by recognizing their differences and similarities.
+              </p>
+              <!-- <b>In-depth Reasoning of the Relationship</b> -->
+              <div class="item">
+                <img src="static/images/error2.jpg" alt="MY ALT TEXT"/>
+              </div>
+              <p>
+                => <i>Future work might incorporate recent advanced reasoning approaches (e.g., multi-agent debate [68], test-time compute scaling [69]) to further improve model performance.</i>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="is-size-5 dnerf darkblue-text"><b>Hallucination and Incorrect Association</b></span>
+              </p>
+              <div class="item">
+                <img src="static/images/error3.jpg" alt="MY ALT TEXT"/>
+              </div>
+              <p>
+                => <i>This suggests the need for improving world knowledge and social understanding abilities to enhance model performance on this task.</i>
+              </p>
+            </li>
+          </ul> 
         </div>
     </div>
+  </div>
 </section>
-<br/>
-<!-- End Tasks -->
+<!-- End Error Analysis and Future Directions -->
 
 
-<!-- pipeline overview -->
-<!-- <section class="hero teaser">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="column is-full">
-        <h2 class="title has-text-centered">Mask Consistency</h2>
-          <div class="row d-flex justify-content-around">
-            <div class="content has-text-justified">
-              <p class="content has-text-justified">Our multi-view segmentation approach can not only maintain mask consistency across different views, but can also take regions without semantic meanings into consideration (i.e. the shadow on the left side of the book).
+<!-- Potential Applications -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Potential Applications</h2>
+        </div>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>VLM / LLM Evaluation</b></span></br>
+                As a benchmark, this dataset can be used to evaluate the reasoning ability, comic understanding and humor understanding ability of a Vision Language Model. The following result is the how we evaluate the humor understanding ability of VLMs in our paper.
               </p>
-            </div>
-            <div class="col-5 p-1">
-              <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                <source src="static/videos/ori_book_spiral_050000_rgb.mp4"
-                        type="video/mp4">
-              </video>
-              <h2 class="subtitle has-text-centered">Original Scene</h2>
-            </div>
-            <div class="col-5 p-1">
-              <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                <source src="static/videos/book_mask.mp4"
-                        type="video/mp4">
-              </video>
-              <h2 class="subtitle has-text-centered">Masks</h2>
-            </div>
-          </div>
-      </div>
+              
+              <div class="item">
+                <img src="static/images/app1_evaluation.jpg" alt="FAIL TO LOAD"/>
+              </div>
+              </br>
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>Generative task</b></span></br>
+                In the future, we intend to explore more deeply how AI can not only interpret but also creatively engage with content. This includes generating pivotal turning points from one perspective and creating counterpoints to given scenarios, like generating a "YES" image’s counterpart. The following is a simple example of it.                
+              </p>
+
+              <div class="image-container">
+                <img src="static/images/app2_generation.jpg" alt="FAIL TO LOAD" style="width: 500px;" />
+              </div>
+              </br>
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>VLM image understanding</b></span></br>
+                We will explore in more depth how VLM understands these images and how to improve VLM’s ability to understand these humorous images. We can address the hallucinations in the samples by improving the model’s reasoning ability and improve VLM’s understanding of the deep semantics of the images.
+              </p>
+              <div class="item">
+                <img src="static/images/app3_understand.jpg" alt="FAIL TO LOAD"/>
+              </div>
+            </li>
+
+          </ul> 
+        </div>
     </div>
   </div>
-</section> -->
-<!-- End pipeline overview -->
+</section>
+<!-- End Error Analysis and Future Directions -->
 
 
-<!-- pipeline overview -->
-<!-- <section class="section" id="BibTeX">
+<!-- Potential Applications -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Ethics Statement</h2>
+        </div>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>Copyright and License</b></span></br>
+                All data samples collected are sourced from publicly available content on social media platforms. We ensure compliance with copyright by utilizing original links to comics without infringement. In addition, we obtained permission from the author artist (e.g., {Anton Gudim, Liz Climo}) to conduct our benchmark using these public images. Additionally, we commit to open-sourcing our annotated benchmark, providing corresponding links to each comic image. We diligently review samples, filtering out potentially offensive or harmful content.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>The Large Vision Language Models</b></span></br>
+                The VLMs utilized in our experiments are pretrained using diverse web corpora, which may introduce biases in their outputs. We advise users to conscientiously evaluate the ethical implications of generated outputs when employing them in future research endeavors.            
+              </p>
+
+
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>Data Annotation</b></span></br>
+                Eight human judges are engaged in our annotation process. We compensate these judges with an average hourly wage of $11, ensuring fair remuneration for their contributions.
+              </p>
+            </li>
+
+          </ul> 
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Error Analysis and Future Directions -->
+
+
+<!-- Citation -->
+<section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title">Citation</h2>
         <p>If you find our work helpful, please consider cite us:</p>
-        <pre><code>@misc{lu2024viewconsistentobjectremovalradiance,
-          title={View-consistent Object Removal in Radiance Fields}, 
-          author={Yiren Lu and Jing Ma and Yu Yin},
-          year={2024},
-          eprint={2408.02100},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV},
-          url={https://arxiv.org/abs/2408.02100}, 
-    }
+        <pre><code>@article{hu2024cracking,
+          title={Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions},
+          author={Zhe Hu, Tuo Liang, Jing Li, Yiren Lu, Yunlai Zhou, Yiran Qiao, Jing Ma, Yu Yin},
+          journal={arXiv preprint arXiv:2405.19088},
+          year={2024}
+          }
 </code></pre>
     </div>
-</section> -->
+</section>
 <!-- End pipeline overview -->
 
 
 <footer class="footer">
     <div class="container">
         <div class="columns is-centered">
-            <div class="column is-8">
+            <div class="column is-10">
                 <div class="content">
-                    <p>Website template borrowed from <a href="https://spinnerf3d.github.io/">SPIn-NeRF</a> and <a href="https://github.com/ornerf/ornerf.github.io">OR-NeRF</a>.</p>
+                    <p>The comics on the website are created by Artist <a href="https://x.com/like_gudim">Gudim</a>.</p>
+
+                    <p>Website template borrowed from <a href="https://github.com/vulab-AI/View-consistent_Object_Removal_in_Radiance_Fields">View-consistent Object Removal in Radiance Fields</a>.</p>
                     <p>
                         This website is licensed under a <a rel="license"
                                                             href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
